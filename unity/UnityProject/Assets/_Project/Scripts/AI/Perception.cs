@@ -6,6 +6,7 @@ namespace Lab01.AI
     public class Perception : MonoBehaviour
     {
         [SerializeField] private Transform player;
+        public Transform Player => player;
         [SerializeField] private float viewDistance = 10f;
         [SerializeField, Range(0, 180)] private float fov = 90f;
         [SerializeField] private float hearingRadius = 6f;
